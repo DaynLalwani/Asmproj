@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <style>h1 {text-align: center;}
+            h1 {font-size: 50px;}
+            p {font-size: 30px;text-align: center;} 
+            body {background-image: url('bliss.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;}   
+            
+        </style>
+        <h1><b>Gameshow Quiz</b></h1>
+        <p><b>Question 1</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>    
+        
+        <p><b>Question 2</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+        <p><b>Question 3</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+        <p><b>Question 4</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+        <p><b>Question 5</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">d)Option 4</button>
+        
+        <p><b>Question 6</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+        <p><b>Question 7</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+        <p><b>Question 8</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+       
+        <p><b>Question 9</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">d)Option 4</button>
+        
+        <p><b>Question 10</b> </p>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">a)Option 1</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">b)Option 2</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="correctans();">c)Option 3</button>
+        <button type="button" style="font-size: 30px;text-align: center;" onclick="checkcheat();">d)Option 4</button>
+        
+    </head>
+</html>
+<script>
+    var score = 0
+    const audioAlarm = new Audio('a.mp3')
+    var Cheated = new Boolean(false)
+    function checkcheat()
+    {
+        if(Cheated == true){audioAlarm.play();console.log(cheated)}
+    }
+    function correctans(){
+        if(Cheated == true){audioAlarm.play()}
+        if(Cheated == false){score+=1}
+        
+        
+    }
+
+    window.addEventListener('blur',()=>{Cheated = true; document.title = 'Tab switched'})
+    
+</script>
