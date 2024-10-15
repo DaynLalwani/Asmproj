@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <style>h1 {text-align: center;}
+            h1 {font-size: 50px;}
+            p {font-size: 30px;text-align: center;} 
+            body {background-image: url('bliss.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;}
+                
+    
+            
+</style><h1><b>Gameshow Quiz</b></h1></head stye="display: table;"><div type="button" style="text-align: center;" class="btn btn-info">
+       
+        
+        <p><b>Question 1</b> </p>
+        
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc1(1,q11);" id="q11">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc1(0,q12);" id="q12">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc1(0,q13);" id="q13">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc1(0,q14);" id="q14">d)Option 4</button>   
+        <p><b>Question 2</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc2(0,q21);" id="q21">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc2(1,q22);" id="q22">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc2(0,q23);" id="q23">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc2(0,q24);" id="q24">d)Option 4</button>
+        
+        <p><b>Question 3  Who is the president of USA</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc3(0,q31);" id="q31">a)obama</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc3(1,q32);" id="q32">b)biden</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc3(0,q33);" id="q33">c)kamla Harris </button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc3(0,q34);" id="q34">d)putin</button>
+        
+        <p><b>Question 4</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc4(0,q41);" id="q41">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc4(0,q42);" id="q42">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc4(1,q43);" id="q43">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc4(0,q44);" id="q44">d)Option 4</button>
+        
+        <p><b>Question 5</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc5(1,q51);" id="q51">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc5(0,q52);" id="q52">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc5(0,q53);" id="q53">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc5(0,q54);" id="q54">d)Option 4</button>
+        
+        <p><b>Question 6</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc6(0,q61);" id="q61">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc6(0,q62);" id="q62">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc6(0,q63);" id="q63">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc6(1,q64);" id="q64">d)Option 4</button>
+        
+        <p><b>Question 7</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc7(0,q71);" id="q71">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc7(0,q72);" id="q72">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc7(1,q73);" id="q73">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc7(0,q74);" id="q74">d)Option 4</button>
+        
+        <p><b>Question 8</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc8(0,q81);" id="q81">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc8(1,q82);" id="q82">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc8(0,q83);" id="q83">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc8(0,q84);" id="q84">d)Option 4</button>
+       
+        <p><b>Question 9</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc9(0,q91);" id="q91">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc9(1,q92);" id="q92">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc9(0,q93);" id="q93">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc9(0,q94);" id="q94">d)Option 4</button>
+        
+        <p><b>Question 10</b> </p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc10(0,q101);" id="q101">a)Option 1</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc10(0,q102);" id="q102">b)Option 2</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc10(0,q103);" id="q103">c)Option 3</button>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="qc10(1,q104);" id="q104">d)Option 4</button>
+      <p id="p1"></p>
+      <button type="button" style="font-size: 30px;text-align: center; background-color: transparent; " onclick="submit();" id="q">Submit</button>
+      </div>
+    </body>
+</html>
+<script>
+    document.title ='Quiz'
+    var q1 = 0;var cs1=document.getElementById("p1")
+    var q2 = 0;var cs2=document.getElementById("p1")
+    var q3 = 0;var cs3=document.getElementById("p1")
+    var q4 = 0;var cs4=document.getElementById("p1")
+    var q5 = 0;var cs5=document.getElementById("p1")
+    var q6 = 0;var cs6=document.getElementById("p1")
+    var q7 = 0;var cs7=document.getElementById("p1")
+    var q8 = 0;var cs8=document.getElementById("p1")
+    var q9 = 0;var cs9=document.getElementById("p1")
+    var q10 = 0;var cs10=document.getElementById("p1")
+    
+    var score = 0
+    const audioAlarm = new Audio('a.mp3')
+    var Cheated = new Boolean(false)
+    function submit(){score=q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;window.open('index2.html?score='+score,"_self")}
+    
+    function qc1(ans,name){q1=ans ;if(Cheated==true){audioAlarm.play()} ;cs1.innerHTML = cs1.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs1=name ;}
+    function qc2(ans,name){q2=ans ;if(Cheated==true){audioAlarm.play()};cs2.innerHTML = cs2.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs2=name ;}
+    function qc3(ans,name){q3=ans ;if(Cheated==true){audioAlarm.play()};cs3.innerHTML = cs3.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs3=name ;}
+    function qc4(ans,name){q4=ans ;if(Cheated==true){audioAlarm.play()};cs4.innerHTML = cs4.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs4=name ;}
+    function qc5(ans,name){q5=ans ;if(Cheated==true){audioAlarm.play()};cs5.innerHTML = cs5.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs5=name ;}
+    function qc6(ans,name){q6=ans ;if(Cheated==true){audioAlarm.play()};cs6.innerHTML = cs6.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs6=name ;}
+    function qc7(ans,name){q7=ans ;if(Cheated==true){audioAlarm.play()};cs7.innerHTML = cs7.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs7=name ;}
+    function qc8(ans,name){q8=ans ;if(Cheated==true){audioAlarm.play()};cs8.innerHTML = cs8.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs8=name ;}
+    function qc9(ans,name){q9=ans ;if(Cheated==true){audioAlarm.play()};cs9.innerHTML = cs9.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs9=name ;}
+    function qc10(ans,name){q10=ans ;if(Cheated==true){audioAlarm.play()}cs10.innerHTML = cs10.innerHTML.substr(2) ;var q = name.innerHTML; name.innerHTML ="• "+q;cs10=name ;}
+    
+    window.addEventListener('blur',()=>{Cheated = true; document.title = 'Assembly Quiz'})
+    
+</script>
